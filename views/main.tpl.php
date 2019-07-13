@@ -5,21 +5,19 @@
         <title><?php echo $pageData['title']; ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/fontawesome.min.css">
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
 
-        <header>
-        </header>
-
-        <div id="content">
+<header>
+</header>
+      <div id="content">
             <div class="container-fluid table-block">
                 <div class="row table-cell-block">
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-md-6">
                         <h1 class="text-center login-title">Вход</h1>
                         <div class="account-wall">
-                            <img class="profile-img" src="/images/user-login.png" alt="">
                             <form method="post" class="form-signin" id="form-signin" name="form-signin">
                             <input type="hidden" name="action" value="login">
                                 <?php if(!empty($pageData['loginError'])) :?>
@@ -31,7 +29,7 @@
                             </form>
                         </div>
                         </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-md-6">
                         <h1 class="text-center login-title">Регистрация</h1>
                         <div class="account-wall">
                             <form method="post" class="form-signin" id="form-reg" name="form-reg">
@@ -51,11 +49,10 @@
             </div>
         </div>
 
-        <footer>
-        </footer>
-        <script src="/js/jquery.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <!-- <script src="/js/angular.min.js"></script>
-        <script src="/js/script.js"></script> -->
-    </body>
+<footer>
+</footer>
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
 </html>

@@ -13,7 +13,7 @@ class DB
         $pass   = self::PASS;
         $host   = self::HOST;
         $db     = self::DB;
-        $conn   = new PDO("mysql:dbname=$db;host=$host", $user, $pass);
+        $conn   = new PDO("mysql:mvc_app=$db;host=$host", $user, $pass);
         $conn->exec("SET NAMES 'utf8'");
         return $conn;
     }

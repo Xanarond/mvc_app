@@ -1,6 +1,6 @@
 <?php
-
-define("ROOT", $_SERVER['DOCUMENTROOT']);
+session_start();
+define("ROOT", "E:\xampp\htdocs\mvc_app");
 define("CONTROLLER_PATH", ROOT . "/controllers/");
 define("MODEL_PATH", ROOT . "/models/");
 define("VIEW_PATH", ROOT . "/views/");
@@ -10,3 +10,6 @@ require_once('route.php');
 require_once MODEL_PATH . 'Model.php';
 require_once VIEW_PATH . 'View.php';
 require_once CONTROLLER_PATH . 'Controller.php';
+
+
+Routing::buildRoute();
